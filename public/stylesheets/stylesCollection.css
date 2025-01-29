@@ -1,0 +1,34 @@
+.back-button {
+  margin-bottom: 2rem;
+}
+
+.back-button a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("../images/dogs.jpg");
+  background-attachment: fixed;
+}
+
+.collection-grid-container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  row-gap: 3rem;
+}
+
+.collection-grid-container img{
+  width: 200px;
+  border-radius: 1rem;
+}
+
+.dynapuff {
+  font-family: "DynaPuff", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

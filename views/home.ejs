@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Dogs</title>
+  <link rel="shortcut icon" href="/images/dog.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheets/stylesHome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex-container">
+    <h1 class="dynapuff">Welcome to Awesome Dogs!!</h1>
+    <h2 class="dynapuff">Biggest collection of dogs images on internet!!</h2>
+  </div>
+  <div class="form-container">
+    <form action="/images" method="post" autocomplete="off">
+      <label for="breed" class="dynapuff">Search for a breed : </label>
+      <input type="text" id="breed" name="breed">
+      <button class="dynapuff">let's find</button>
+    </form>
+    <h3 class="dynapuff">or</h3>
+    <form action="/images" method="post" autocomplete="off">
+      <select name="breed" id="breed" class="dynapuff">
+        <option value="">select one breed</option>
+        <% for(let i in breeds) { %>
+          <option value=<%=i %>><%= i %>
+          </option>
+          <% } %>
+      </select>
+      <button class="dynapuff">let's find</button>
+    </form>
+  </div>
+</body>
+
+</html>

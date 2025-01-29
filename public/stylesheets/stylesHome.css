@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("../images/dogs.jpg");
+  background-attachment: fixed;
+}
+
+.dynapuff {
+  font-family: "DynaPuff", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.flex-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+
+.form-container{
+  text-align: center;
+}
+
+.form-container input,button,select{
+  background-color: #A9BFA8;
+}

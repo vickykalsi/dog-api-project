@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome dogs</title>
+  <link rel="shortcut icon" href="/images/dog.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheets/stylesCollection.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="back-button dynapuff"><a href="/">Click here to go back</a></div>
+  <div class="collection-grid-container">
+    <% for(let i of collections) { %>
+      <img src=<%=i %> alt="">
+      <% } %>
+  </div>
+</body>
+
+</html>
